@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Me International — it's about Me</title>
+<meta name="description" content="Me International is the company behind tested.me. In a world of more data, more devices and more AI, the person the information is about stays in charge of it.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#ffffff;
+    --ink:#17203a;
+    --ink-soft:#5b6478;
+    --rule:#dfe2e9;
+    --accent:#2c6e63;
+    box-sizing:border-box;
+    padding-top:env(safe-area-inset-top,0px);
+    padding-bottom:env(safe-area-inset-bottom,0px);
+  }
+  *,*::before,*::after{box-sizing:inherit}
+  html{scroll-padding-top:env(safe-area-inset-top,0px)}
+  html,body{height:100%}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"Newsreader",Georgia,"Times New Roman",serif;
+    font-size:1.125rem;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    display:flex;
+    flex-direction:column;
+    min-height:100%;
+  }
+  main{
+    flex:1 0 auto;
+    width:100%;
+    max-width:36rem;
+    margin:0 auto;
+    padding:clamp(3rem,12vh,9rem) 1.5rem 3rem;
+  }
+  .me{
+    font-weight:300;
+    font-size:clamp(6rem,22vw,13rem);
+    line-height:.85;
+    letter-spacing:-.03em;
+    margin:0 0 1.75rem -.04em;
+    font-variation-settings:"opsz" 72;
+  }
+  .me span{color:var(--accent)}
+  h1{
+    font-weight:400;
+    font-size:clamp(1.5rem,3.2vw,1.95rem);
+    line-height:1.25;
+    margin:0 0 1.5rem;
+    letter-spacing:-.005em;
+  }
+  p{margin:0 0 1.25rem;max-width:34em}
+  p.soft{color:var(--ink-soft)}
+  a{color:var(--accent);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.15em}
+  a:hover{text-decoration-thickness:2px}
+  a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+  .first{
+    margin-top:2.5rem;
+    padding-top:1.5rem;
+    border-top:1px solid var(--rule);
+  }
+  .first p{margin-bottom:.5rem}
+  footer{
+    flex-shrink:0;
+    width:100%;
+    max-width:36rem;
+    margin:0 auto;
+    padding:1.5rem 1.5rem 2.5rem;
+    color:var(--ink-soft);
+    font-size:.9rem;
+    line-height:1.5;
+  }
+  footer p{margin:0 0 .35rem}
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#101420;--ink:#eef0f5;--ink-soft:#a5abbb;--rule:#2a3145;--accent:#7fc4b5;
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#101420;--ink:#eef0f5;--ink-soft:#a5abbb;--rule:#2a3145;--accent:#7fc4b5;
+  }
+</style>
+</head>
+<body>
+<main>
+  <div class="me" aria-hidden="true">M<span>e</span></div>
+  <h1>In a world of more data, more devices and more AI than any of us can keep up with, one thing shouldn't change: the person the information is about stays in charge of it.</h1>
+  <p>That's the idea behind Me. The human in the loop. The clinician in the loop. Information that has been verified at source, held by the person it belongs to, and read by anyone else — including AI — only when that person allows it, and only for what they allow. The intelligence comes to your data; your data doesn't go to the intelligence.</p>
+  <p>Whether the number came from a lab or from your wrist, it's yours first.</p>
+  <div class="first">
+    <p><a href="https://tested.me">tested.me</a> is the first Me product: your health results, measurements and everyday signals, verified and held by you.</p>
+    <p class="soft">Health is where we start, because it's where the stakes are highest. There's more to Me than health — and in 2027 we'll tell you about it.</p>
+  </div>
+</main>
+<footer>
+  <p>ME International Ltd. Registered in England and Wales, company number 12623610.</p>
+  <p><a href="mailto:hello@me.international">hello@me.international</a></p>
+  <p>© 2026 ME International Ltd</p>
+</footer>
+</body>
+</html>
